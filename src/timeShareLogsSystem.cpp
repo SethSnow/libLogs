@@ -25,7 +25,7 @@ void TimeShareLogsSystem::setSaveDir(const char* logsFileDir)
 	{
 		if(!CreateFileDirectory(logsFileDir))
 			std::cout << "Create file directory " << std::string(logsFileDir) << " fail!" << std::endl; 
-		mSaveDir = std::move(std::string(logsFileDir));
+        mSaveDir = std::string(logsFileDir);
 	}
 	return;
 }
